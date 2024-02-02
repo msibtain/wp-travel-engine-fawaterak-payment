@@ -25,11 +25,11 @@ class FawaterakGateway
     function i_gateway_add($gateways_list)
     {
         $gateways_list['fawaterak_gateway'] = [
-            'label'        => __( 'Fawaterak Gateway', 'wp-travel-engine' ),
+            'label'        => __( 'Credit or Debit Card', 'wp-travel-engine' ),
 			'input_class'  => '',
 			'public_label' => '',
 			'icon_url'     => '',
-			'info_text'    => __( 'Fawaterak Payment gateway.', 'wp-travel-engine' ),
+			'info_text'    => __( 'Credit or Debit Card.', 'wp-travel-engine' ),
         ];
 
         return $gateways_list;
@@ -38,7 +38,7 @@ class FawaterakGateway
     function i_gateway_settings($global_tabs)
     {
         $global_tabs['wpte-payment']['sub_tabs']['fawaterak_gateway'] = [
-            'label' => 'Fawaterak Gateway',
+            'label' => 'Credit or Debit Card',
             'content_path' => plugin_dir_path( __FILE__ ) . 'settings/fawaterak_settings.php',
         ];
         
